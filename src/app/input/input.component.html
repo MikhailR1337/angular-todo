@@ -1,0 +1,12 @@
+<input
+    class="todo-input"
+    type="text"
+    placeholder="Enter your todo"
+    [(ngModel)]="value"
+/>
+<input
+    class="todo-input__button"
+    type="button"
+    value="add"
+    (click)="todoHandler()"
+/>

@@ -1,0 +1,6 @@
+<div class="todo-item" *ngFor="let todo of todos">
+    <span class="todo-name">{{ todo.name }}</span>
+    <button (click)="removeTodo && removeTodo(todo.id)">remove</button>
+</div>
+
+<h1 *ngIf="!todos || !todos.length">there aren't todos</h1>
